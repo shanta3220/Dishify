@@ -1,4 +1,4 @@
-const API_KEY = "6700baee44114d20a7deb3af4ed110d9";
+const API_KEY = "506a280c17fb40268c037bf6197e62be";
 const api = new SpoonacularApi(API_KEY);
 
 const recipesHeader = document.querySelector(".recipes__header");
