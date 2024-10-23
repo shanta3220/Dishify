@@ -123,7 +123,7 @@ const renderRecipeCard = (ingredient) => {
     const recipeImage = document.createElement("img");
     recipeImage.classList.add("recipe-card__image");
     recipeImage.src = ingredient.image;
-    recipeImage.alt = ingredient.title;
+    recipeImage.alt = "Recipe Image";
 
     const recipeTitle = document.createElement("p");
     recipeTitle.classList.add("recipe-card__title")
