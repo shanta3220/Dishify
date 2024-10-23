@@ -6,7 +6,7 @@
 ### Functionalities
 - **Ingredient Fetching**: Fetches the ingredients from `./data/data.json` (personally upgraded version post-hackathon).
 - **Form Rendering**: Renders the ingredients as form inputs of type checkbox based on the data in `data.json` (personally upgraded version post-hackathon).
-- **Recipe Search**: Users can select ingredient checkboxes and click the form's submit button, labeled "Find Recipes." The app then iterates through the selected ingredients to map their names (e.g., `["Chicken", "Rice"]`) into an array and joins them into a single string: `"Chicken,Rice"`.
+- **Recipe Search**: Users can select ingredient checkboxes and click the form's submit button labeled "Find Recipes." The app iterates through the selected ingredients, maps their names (e.g., `["Chicken", "Rice"]`) into an array, and joins them into an `ingredientString`: `"Chicken,Rice"`.
 - **API Request**: This single `ingredientString` is passed to the Spoonacular Web API as a GET request along with the API key:
 
   ```plaintext
