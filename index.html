@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="./scripts/api.js" defer></script>
+    <script src="./scripts/index-page.js" defer></script>
+    <title>Dishify</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Dishify</h1>
+    </header>
+
+    <main class="main">
+
+        <section class="section form">
+
+            <div class="form__header">
+                <h2 class="form__title">What's in Your Kitchen?</h2>
+                <p class="form__description">Just enter your ingredients below, and let's turn what's in your kitchen
+                    into a delicious meal!</p>
+            </div>
+
+            <form class="ingredients-form">
+                <div class="ingredients-form__body">
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="chicken"> Chicken 🍗
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="rice"> Rice 🍚
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="pasta"> Pasta 🍝
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="tomatoes"> Tomatoes 🍅
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="onions"> Onions 🧅
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="garlic"> Garlic 🧄
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="eggs"> Eggs 🥚
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="cheese"> Cheese 🧀
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="potatoes"> Potatoes 🥔
+                    </label>
+                    <label class="ingredients-form__label">
+                        <input class="ingredients-form__checkbox" type="checkbox" name="olives"> Olives 🫒
+                    </label>
+                </div>
+                <div class="ingredients-form__submit">
+                    <button class="button" type="submit">Find Recipes</button>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="section recipes">
+            <div class="recipes__header"></div>
+            <div class="recipes__results"></div>
+        </section>
+    </main>
+</body>
+
+</html>
