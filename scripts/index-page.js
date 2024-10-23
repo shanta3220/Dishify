@@ -39,15 +39,13 @@ formElement.addEventListener("submit", async (event) => {
 
 });
 
-// fetch ingredients from a json file
+// Fetch ingredients from a json file
 const fetchIngredientsFromJson = async () => {
     const jsonFilePath = '../data/data.json';
 
     try {
-        // Fetch the JSON file
-        const response = await fetch(jsonFilePath);
+        const response = await fetch(jsonFilePath)
 
-        // Check if the response is okay (status code 200)
         if (!response.ok) {
             throw new Error("fetchIngredientsFromJson: response was not ok");
         }
